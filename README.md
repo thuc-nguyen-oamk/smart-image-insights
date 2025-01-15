@@ -1,8 +1,8 @@
-# Smart Image Insights WebApp
+# Cloud-Based Smart Image Insights WebApp
 
 ## Overview
 
-**Smart Image Insights** is a web application designed to provide users with detailed analysis of their images by leveraging the power of Azure AI Services (formerly Azure Cognitive Services). The app allows users to upload images and receive detailed insights, including image descriptions, tags, categories, and detected objects, all through an intuitive web interface.
+**Cloud-Based Smart Image Insights** is a web application designed to provide users with detailed analysis of their images by leveraging the power of Azure AI Services (formerly Azure Cognitive Services). The app allows users to upload images and receive detailed insights, including image descriptions, tags, categories, and detected objects, all through an intuitive web interface.
 
 ## Key Features
 
