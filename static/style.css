@@ -1,0 +1,150 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Header Styles */
+header {
+    background: #0078d7;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Upload Section */
+.upload-section h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.upload-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.file-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="file"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="file"]:focus {
+    outline: none;
+    border-color: #0078d7;
+    box-shadow: 0 0 5px rgba(0, 120, 215, 0.5);
+}
+
+.submit-button {
+    background: #0078d7;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background: #005fa3;
+}
+
+.error-message {
+    color: #d9534f;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.95rem;
+}
+
+/* Image Analysis Results */
+.analyzed-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.analysis-summary article {
+    margin-bottom: 20px;
+}
+
+.analysis-summary h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #0078d7;
+    border-bottom: 2px solid #0078d7;
+    display: inline-block;
+}
+
+.analysis-summary ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.analysis-summary ul li {
+    margin-bottom: 8px;
+    font-size: 1rem;
+}
+
+.analysis-summary ul li span {
+    color: #555;
+    font-size: 0.9rem;
+}
+
+/* Action Buttons */
+.action-buttons {
+    text-align: center;
+}
+
+.action-buttons .button {
+    background: #0078d7;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.action-buttons .button:hover {
+    background: #005fa3;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Analysis Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Image Analysis Results</h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="image-display">
+                <img src="{{ image_url }}" alt="Analyzed Image" class="analyzed-image">
+            </section>
+
+            <section class="analysis-summary">
+                <article>
+                    <h2>Description</h2>
+                    <p>{{ analysis.description }}</p>
+                </article>
+
+                <article>
+                    <h2>Tags</h2>
+                    <ul>
+                        {% for tag in analysis.tags %}
+                        <li>{{ tag.name }} <span>(Confidence: {{ tag.confidence }})</span></li>
+                        {% endfor %}
+                    </ul>
+                </article>
+
+                <article>
+                    <h2>Categories</h2>
+                    <ul>
+                        {% for category in analysis.categories %}
+                        <li>{{ category.name }} <span>(Confidence: {{ category.confidence }})</span></li>
+                        {% endfor %}
+                    </ul>
+                </article>
+
+                <article>
+                    <h2>Detected Objects</h2>
+                    <ul>
+                        {% for obj in analysis.objects %}
+                        <li>{{ obj.name }} <span>(Confidence: {{ obj.confidence }})</span></li>
+                        {% endfor %}
+                    </ul>
+                </article>
+            </section>
+            
+            <div class="action-buttons">
+                <a href="{{ url_for('home_page') }}" class="button">Analyze Another Image</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; {{ current_year }} Smart Image Insights. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
