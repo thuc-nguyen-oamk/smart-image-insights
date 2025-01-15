@@ -25,7 +25,7 @@
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/YourUsername/smart-image-insights.git
+   git clone https://github.com/thuc-nguyen-oamk/smart-image-insights
    cd smart-image-insights/
    ```
 
@@ -48,7 +48,7 @@
    python main.py
    ```
 
-5. Open your browser and navigate to `http://127.0.0.1:5000/` to start analyzing images.
+5. Open your browser and navigate to `http://localhost:5000/` to start analyzing images.
 
 ---
 
@@ -107,7 +107,3 @@ This project is licensed under the [MIT License](LICENSE).
 - [Flask Framework](https://flask.palletsprojects.com/)
 
 ---
-
-### File Name Changes
-- Renamed `app.py` to `main.py` for clarity.
-- Renamed `style.css` to `styles.css` for consistency.
